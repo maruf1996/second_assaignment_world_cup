@@ -86,47 +86,27 @@ a{
 .right_part{
     width: 70%;
 }
-.players{
+.update_match{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 }
-.player{
-    width: 18.5em;
-    border: 2px solid rgba(128, 128, 128, 0.14);
-    border-radius: 10px;
+.player_banner{
+    display: flex;
 }
 .player_banner img{
-    width: 100%;
+    padding: 0 1em;
 }
-.player_Details{
-    padding: 15px;
-}
-.player_Details button{
-    padding:5px 15px;
-    font-size: 1em;
-    font-weight: 500;
-    background-color: white;
-    border-radius: 5px;
-}
-.player_Details h2{
-   font-size: 1.2em;
-}
-.player_info{
- display: flex;
- flex-direction: row;
-}
-
-.time, .comment{
-   display: flex;
-   align-items: center;
-}
-.time{
-  margin-right: 3em;
-}
-.time span, .comment span{
-  padding: 0 8px;
+.match{
+    width: 312px;
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: 2px solid rgba(128, 128, 128, 0.14);
+    border-radius: 10px;
 }
 
 /* footer part  */
@@ -199,21 +179,24 @@ footer{
     .right_part{
         width: 100%;
     }
-    .players{
+    .update_match{
         grid-template-columns: repeat(2,1fr);
     }
-    .player{
+    .match{
         width: 100%;
     }
-    .player_Details button{
-        padding:10px 25px;
-        font-size: 1.8em;
+    .player_banner img,.player_banner h2{
+        margin: 0 2em;
     }
-    .player_Details h2{
+    .player_banner img{
+        padding: 0 0.5em;
+        width: 100%;
+    }
+    .player_Details  h2{
         font-size: 2em;
     }
-    .player_info{
-      font-size: 1.8em; 
+    .player_Details  h4{
+        font-size: 1.5em;
     }
 }
 
@@ -263,21 +246,24 @@ footer{
     .right_part{
         width: 100%;
     }
-    .players{
+    .update_match{
         grid-template-columns: repeat(1,1fr);
     }
-    .player{
+    .match{
         width: 100%;
     }
-    .player_Details button{
-        padding:10px 25px;
-        font-size: 1.5em;
+    .player_banner img,.player_banner h2{
+        margin: 0 2em;
     }
-    .player_Details h2{
+    .player_banner img{
+        padding: 0 0.5em;
+        width: 100%;
+    }
+    .player_Details  h2{
         font-size: 2em;
     }
-    .player_info{
-      font-size: 1.8em; 
+    .player_Details  h4{
+        font-size: 1.5em;
     }
 
     /* footer part  */
